@@ -1,13 +1,8 @@
-import React,{useContext} from 'react'
-import {userContext} from './Create'
+import { createContext } from "react";
 
-
-function Context() {
-    const user= useContext(userContext) 
-  return (
-    <div>
-
-    </div>
-  )
+const studentData= {
+  name:"A",
+  course:"MERN"
 }
+const Context = createContext(studentData)
 export default Context
